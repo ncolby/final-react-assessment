@@ -28,7 +28,7 @@ class MessageInput extends React.Component {
         }
         
         return(
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="App">
                 <input type="text"
                 placeholder="Message..."
                 name="text"
@@ -41,7 +41,7 @@ class MessageInput extends React.Component {
                 value={user}
                 onChange={handleChangeUser}
                 />
-                <input type="submit" />
+                <input type="submit" className='btn'/>
             </form>
         )
     }

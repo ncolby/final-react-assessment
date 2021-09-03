@@ -7,9 +7,9 @@ class MessageItem extends React.Component {
         const {message, selectSingleMessage} = this.props
 
         return(
-            <Fragment>
-                <h1 onClick={() => selectSingleMessage(message)}>{message.messageBody}</h1>
-                <p>User: {message.user}</p>
+            <Fragment className="container">
+                <h2 className="user">{message.user}:</h2>
+                <h2 onClick={() => selectSingleMessage(message)} className="messages">{message.messageBody}</h2>
             </Fragment>
         )
     }

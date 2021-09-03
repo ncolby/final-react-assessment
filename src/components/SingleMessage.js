@@ -26,11 +26,11 @@ class SingleMessage extends React.Component {
 
         return(
             <Fragment>
-                <h1>{singleMessage.messageBody}</h1>
-                <p>{singleMessage.user}</p>
-                <button onClick={handleClearSingleMessage}>Back</button>
-                <button onClick={handleDelete} id={singleMessage.id}>Delete</button>
-                <button onClick={handleEdit}>Edit</button>
+                <h2 className="user">{singleMessage.user}:</h2>
+                <h2 className="messages-edit">{singleMessage.messageBody}</h2>
+                <button onClick={handleClearSingleMessage} className='btn'>Back</button>
+                <button onClick={handleDelete} id={singleMessage.id} className='btn'>Delete</button>
+                <button onClick={handleEdit} className='btn'>Edit</button>
                 {edit && <EditMessage singleMessage={singleMessage} editMessage={editMessage}/>}
             </Fragment>
         )

@@ -10,7 +10,7 @@ class Messages extends React.Component {
         const {messages, selectSingleMessage} = this.props
         
         return(
-            <div>
+            <div className="container">
                 {messages.map(message => (
                     <MessageItem
                     selectSingleMessage={selectSingleMessage}

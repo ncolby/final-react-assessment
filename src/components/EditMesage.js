@@ -29,10 +29,10 @@ class EditMessage extends React.Component {
 
         return(
             <Fragment>
-                <h1>Edit Message</h1>
+                <h1 className="editHead">Edit Message</h1>
                 <form onSubmit={handleSubmit} id={singleMessage.id}>
                     <input type="text" value={text} onChange={handleEditStateChange} placeholder={singleMessage.messageBody}/>
-                    <input type="submit"/>
+                    <input type="submit" className='btn'/>
                 </form>
             </Fragment>
         )

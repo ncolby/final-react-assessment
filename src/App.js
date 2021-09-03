@@ -74,7 +74,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <h1>My messaging system!</h1>
+        <h1 className="pageHeader">My messaging system!</h1>
         <MessageInput addMessage={addMessage}/>
         <Messages 
         messages={messages}
